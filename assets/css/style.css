@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "GiloryBold";
+    src: url("fonts/SVN-Gilroy Bold.otf") format("opentype");
+    /*src:
+    url("css/fonts/SVN-Gilroy Bold.woff") format("woff"),
+    url("css/fonts/SVN-Gilroy Bold.otf") format("opentype"),
+    url("css/fonts/SVN-Gilroy Bold.svg#filename") format("svg");*/
+}
+@font-face{
+    font-family: "GiloryMedium";
+    src: url("fonts/SVN-Gilroy Medium.otf") format("opentype");
+}
+*{
+    font-family: 'GiloryBold';
+}
+body{
+    background: blue;
+}
+/* Top titile Area */
+.top-title{
+    width: 100%;
+    background-color: #254099;
+    height: 57px;
+    position: relative;
+}
+.top-info{
+    float: left;
+    line-height: 57px;
+}
+.top-info > span{
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    margin-right: 1em;
+}
+.top-info > i{
+    text-align: center;
+    color: #99aadd;
+    margin-right: 0.4em;
+}
+.top-lognreg{
+    float: right;
+    line-height: 57px;
+}
+.top-lognreg > span{
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    margin-right: 1em;
+}
+.top-lognreg > i{
+    text-align: center;
+    color: #99aadd;
+    margin-right: 0.4em;
+}
+/* Top titile Area */
+
+
+/* Navigation CSS */
+.navigation{
+    width: 100%;
+    padding-top: 3em;
+    position: absolute;
+    z-index: 9999;
+}
+.navi-items{
+    justify-content: flex-end;
+}
+.navi-items > i {
+    color : white;
+}
+.navi-items > ul > li {
+    margin-right: 0.8em;
+}
+.navi-items > ul > li > a {
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+}
+.navi-items > ul > li:hover {
+    border-bottom: 2px solid #89a6ef;
+}
+.navi-dropdown {
+    text-align: center;
+    overflow: hidden;
+}
+.navi-dropdown:hover .dropdown-content{
+    display: block;
+}
+.navi-dropdown > a{
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+}
+.dropdown-content{
+    display: none;
+    text-align: center;
+    position: absolute;
+    border-radius: 5%;
+    background-color: white;
+    width: 12em;
+    padding: 0em 0.7em;
+    z-index: 1;
+}
+.dropdown-content a{
+    text-align: left;
+    font-family: "GiloryMedium";
+    text-decoration: none;
+    color: #868686;
+}
+.dropdown-content i{
+    color: #868686;
+}
+.dropdown-items{
+    display: block;
+    padding: 0.6em;
+    border-bottom: 1.5px solid #d2d2d2;
+}
+.dropdown-items i{
+    display: none;
+}
+.dropdown-content .dropdown-items:hover a{
+    color: #0531c1;
+}
+.dropdown-content .dropdown-items:hover i{
+    display: inline;
+    color: #0531c1;
+}
+/* Navigation CSS */
+
+/*Picture slide CSS*/
+.picture-slide{
+    position: absolute;
+    z-index: 2;
+}
